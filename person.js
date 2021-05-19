@@ -1,4 +1,4 @@
-const Person = (d) => {
+module.exports = function (d) {
     this.gender = d["Gender"];
     this.height = d["HeightCm"];
     this.weight = d["WeightKg"];
