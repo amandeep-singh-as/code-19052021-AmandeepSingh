@@ -4,7 +4,7 @@ const person = require('./person');
 let BMIData = [];
 
 data.forEach((item, index) => {
-    BMIData.push(new person(item));
+    BMIData.push(new person(item["Gender"], item["HeightCm"], item["WeightKg"]));
 });
 
 console.table(BMIData);

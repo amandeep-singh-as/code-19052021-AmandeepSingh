@@ -1,7 +1,7 @@
-module.exports = function (d) {
-    this.gender = d["Gender"];
-    this.height = d["HeightCm"];
-    this.weight = d["WeightKg"];
+module.exports = function (gender, height, weight) {
+    this.gender = gender;
+    this.height = height;
+    this.weight = weight;
     this.BMI = parseFloat((this.weight * 100 / this.height).toFixed(1));
 
 
